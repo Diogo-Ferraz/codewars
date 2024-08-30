@@ -10,6 +10,11 @@ namespace Solution
     {
         public static string RepeatStr(int n, string s)
         {
+            if (n == 0 || string.IsNullOrEmpty(s))
+            {
+                return string.Empty;
+            }
+            
             var tempStr = s;
             for (int i = 1; i < n; i++)
             {
